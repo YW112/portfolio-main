@@ -1,7 +1,6 @@
 const tabButtons = document.querySelectorAll('.design-list__item');
 const tabDescriptions = document.querySelectorAll('.design__descr');
 const tabImages = document.querySelectorAll('.design-images');
-console.log(tabImages);
 
 const changeContent = (array, value) => {
     array.forEach((elem) => {
