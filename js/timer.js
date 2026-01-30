@@ -8,14 +8,9 @@ const updateClock = () => {
     const timeRemaining = (dateDeadline - date) / 1000;
 
     const days = Math.floor(timeRemaining / 60 / 60 / 24);
-    const hours = Math.floor(timeRemaining / 60 % 60);
+    const hours = Math.floor(timeRemaining / 60 / 60 % 24);
     const minutes = Math.floor((timeRemaining / 60) % 60);
     const seconds = Math.floor(timeRemaining % 60);
-
-    console.log(days);
-    console.log(hours);
-    console.log(minutes);
-    console.log(seconds);
 
     const fDays = days < 10 ? '0' + days : days;
     const fHours = hours < 10 ? '0' + hours : hours;
