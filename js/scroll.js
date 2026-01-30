@@ -3,7 +3,6 @@ const btn = document.querySelector('.main__button');
 
 const allLinks = [...links, btn];
 
-console.log(links);
 allLinks.forEach(link => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
